@@ -1,0 +1,65 @@
+\documentclass[a4paper,10pt,pdflatex]{article}
+\usepackage[table]{xcolor}
+\usepackage{longtable} % Thsi sort of tables can break accrooss pages repeating the header
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{makecell}	
+
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\usepackage[compact, pageatnewline]{titlesec}
+\setlength{\baselineskip}{2\baselineskip}
+
+\usepackage{lipsum}			% ability to insert dummy text
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+\usepackage{xcolor}
+
+\usepackage{parallel}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{stackengine}			% needed to stak thing in header
+\usepackage{vmargin}
+\setstackEOL{\\}
+\usepackage{libertine}
+\usepackage{array,arydshln}
+\usepackage[section]{placeins}
+\usepackage[export]{adjustbox}
+\usepackage[T1]{fontenc}
+\usepackage{underscore}
+
+\usepackage[euler]{textgreek}
+
+\usepackage{lastpage} % to get lastpage
+\usepackage{caption}
+\usepackage{tabularx} % allows defining the table width (whole page for instance)
+\usepackage{ltablex}%\usepackage{tabulary}
+\usepackage{lastpage} % gets the lastpage number
+\usepackage{gensymb}
+\usepackage{csvsimple} % allows reading csv files
+\usepackage{pgfplotstable} 
+\usepackage{colortbl} % This allows to color the first line of tables
+\usepackage{xhfill}
+\newcounter{magicrownumbers} % This is a counter for rownumbers 
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
+\setlength\parindent{0pt}
+
+\usepackage{framed}
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
+\renewcommand*\familydefault{\sfdefault}  %% Only if the base font of the document is to be sans serif
+\renewcommand*{\hrulefill}[2][0pt]{\leavevmode \leaders \hbox to 1pt{\rule[#1]{1pt}{#2}} \hfill \kern 0pt} % Macro to redefine table lines 
+
+
+\usepackage[]{hyperref}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}

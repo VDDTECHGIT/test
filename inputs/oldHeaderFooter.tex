@@ -1,0 +1,51 @@
+\setmarginsrb{2cm}{1cm}{2cm}{1cm}{60pt}{0.5cm}{30pt}{1cm} % SET DOCUMENT MARGINS: \setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}    {headheight}{headsep}{footheight}{footskip}
+
+
+%%% First page  HEADER %%%
+%--------------------------------------------------------------------------------
+\fancypagestyle{firststyle}
+{
+\lhead{\begin{tabular}[b]{l}  \raisebox{-.5\height}{\raggedleft \includegraphics[width=3cm]{inputs/LOGOHorizontal.png}} \\ {\footnotesize \textbf{control your power }}  \end{tabular}}
+\rhead{\begin{tabular}[b]{r}  \small \DOCref  \\ \small Product: \chipID \\ \small Date: \thedate  \end{tabular}}
+\chead{\begin{tabular}[b]{c}   \\   \end{tabular}}
+
+
+\fancyfoot[l]{ \tiny{ \DOCref {} rev. \DOCiss}}
+\fancyfoot[r]{\thepage\ of \pageref{LastPage}}
+\fancyfoot[c]{\tiny{  \textbf{VDDTECH}  \\
+Do not use or copy without the written contentment of VDDTECH}}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+}
+
+%%% DOCUMENT HEADER %%%
+%--------------------------------------------------------------------------------
+\lhead{\begin{tabular}[b]{l}  \raisebox{-.5\height}{\raggedleft \includegraphics[width=3cm]{inputs/LOGOHorizontal.png}} \\ {\footnotesize \textbf{control your power }}  \end{tabular}}
+\rhead{\begin{tabular}[b]{r}   \small \DOCref  \\ \small Product: \chipID \\ \small Date: \thedate  \end{tabular}}
+\chead{\begin{tabular}[b]{c} \chipID {} \doctype \\   \footnotesize \textbf{visit \href{https://www.vddtech.com} {vddtech.com}}  \end{tabular}}
+
+\fancyfoot[l]{ \tiny{ \DOCref {} rev. \DOCiss }}
+\fancyfoot[r]{\thepage\ of \pageref{LastPage}}
+\fancyfoot[c]{ \tiny{  VDDTECH  \\
+Do not use or copy without the written contentment of VDDTECH}}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DOCUMENT TITLE %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass{article}
+
+\begin{document}
+
+%\vspace*{150pt}
+%{\let\newpage\relax\maketitle}
+%\maketitle
+%\thispagestyle{firststyle}
+
+\thispagestyle{firststyle}
+\newpage
+\pagestyle{fancy}

@@ -1,0 +1,53 @@
+\setmarginsrb{2cm}{1cm}{2cm}{1cm}{60pt}{0.5cm}{30pt}{1cm} % SET DOCUMENT MARGINS: \setmarginsrb{leftmargin}{topmargin}{rightmargin}{bottommargin}    {headheight}{headsep}{footheight}{footskip}
+
+
+%%% First page  HEADER %%%
+%--------------------------------------------------------------------------------
+\fancypagestyle{firststyle}
+{
+\lhead{\begin{tabular}[b]{l}  \raisebox{-.5\height}{\raggedleft \includegraphics[width=3cm]{inputs/LOGOHorizontal.png}} \\  { \footnotesize  \textbf{\href{https://www.vddtech.com} {\color{black} {www.vddtech.com}}}}  \end{tabular}} %  {\footnotesize \textbf{control your power }}
+\rhead{\begin{tabular}[b]{r}    \\ {\normalsize \textbf{ \chipID}} \\ {\small  \DOCref {} - \DOCiss {} - \thedate}  \end{tabular}}
+\chead{\begin{tabular}[b]{c}   \\  \doctype \\ \docinfo {}   \end{tabular}}
+
+
+\fancyfoot[l]{  \pbox{120pt} {\scriptsize{Copyright © \CopyrightYear, VDDTECH}}}
+\fancyfoot[r]{   \thepage {} of \pageref{LastPage}} % \thepage\of \pageref{LastPage}
+\fancyfoot[c]{\footnotesize{  \textbf{VDDTECH} }}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+}
+
+%%% DOCUMENT HEADER %%%
+%--------------------------------------------------------------------------------
+\lhead{\begin{tabular}[b]{l}  \raisebox{-.5\height}{\raggedleft \includegraphics[width=3cm]{inputs/LOGOHorizontal.png}} \\  { \footnotesize  \textbf{\href{https://www.vddtech.com} {\color{black} {www.vddtech.com}}}}   \end{tabular}} %  \\ {\footnotesize \textbf{control your power }}
+\rhead{\begin{tabular}[b]{r}    \\ {\normalsize  \textbf{\chipID}} \\ {\small \DOCref {} - \DOCiss {} - \thedate}  \end{tabular}}
+\chead{\begin{tabular}[b]{c}  \\  \doctype \\ \docinfo {}  \end{tabular}}
+
+\fancyfoot[l]{    \pbox{120pt}{ \scriptsize{Copyright © \CopyrightYear, VDDTECH} } }
+\fancyfoot[r]{   \thepage {} of \pageref{LastPage}} % of \pageref{LastPage}
+\fancyfoot[c]{  \footnotesize{  \textbf{VDDTECH}  }}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{2pt}
+
+\titleformat{\section}{\bfseries\Large\raggedright}{}{0em}{\MakeUppercase} % this allow making section title in CAPITALS 
+
+\setlist[itemize]{leftmargin=* ,noitemsep, topsep=0pt} % set default options for itemize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DOCUMENT TITLE %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass{article}
+
+%\documentclass[a4paper,12pt,pdflatex]{article}
+
+\begin{document}
+
+%\vspace*{150pt}
+%{\let\newpage\relax\maketitle}
+%\maketitle
+\thispagestyle{firststyle}
+
+\newpage
+\pagestyle{fancy}
